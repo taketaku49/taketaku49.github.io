@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMLタグ</title>
+</head>
+
+<body>
+  <h1>HTMLのよく使うタグ</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>タグ</th>
+        <th>説明</th>
+        <th>例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>h1</td>
+        <td>見出し。H1はheading1という意味。
+          H1～h6まで。</td>
+        <td>&lt;h1&gt;見出し&lt;/h1&gt;</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>paragraph=段落</td>
+        <td>&lt;p&gt;段落です&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td>img</td>
+        <td>画像を表示</td>
+        <td>&lt;img src=&quot;image.png&quot; alt=&quot;例の画像です&quot; width=&quot;160&quot; height=&quot;160&quot;&gt;
+        </td>
+      </tr>
+      <tr>
+        <td>style</td>
+        <td>CSSタグ
+          &lt;head&gt;タグ内や別ファイルに記載する。</td>
+        <td>
+          <pre>
+        &lt;style&gt;
+          img {
+             border-radius: 50%;
+             }
+          section {
+            border-width: 1px;
+            border-color: gray;
+            border-style: solid;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 8px;
+            background-image:url(back.png);
+          }
+          body {
+            text-align: center;
+          }
+        &lt;/style&gt;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>footer</td>
+        <td>フッターを表す。末尾じゃなくても実はOK。</td>
+        <td>&lt;footer&gt;&copy; hogehoge.com&lt;/footer&gt;</td>
+      </tr>
+      <tr>
+        <td>section</td>
+        <td>意味のあるかたまりに対して汎用的に使えるタグ。スタイルシートで指定する時に便利。
+          これをつけても見た目に変化はない。</td>
+        <td>&lt;section&gt;XXX&lt;/section&gt;</td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>VS Codeエディタではhtml:5 もしくは!でEnterとするとひな形が自動で入る。</td>
+        <td>
+          <pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;ja&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            
+          &lt;/body&gt;
+          &lt;/html&gt;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>コメント</td>
+        <td>VS Codeエディタでは
+          Ctrlキー＋スラッシュ（/）とする。</td>
+        <td>&lt;!-- コメント --&gt;</td>
+      </tr>
+      <tr>
+        <td>ul</td>
+        <td>箇条書きリスト
+          Unordered List</td>
+        <td><pre>
+        &lt;ul&gt;
+          &lt;li&gt;HTML&lt;/li&gt;
+          &lt;li&gt;CSS&lt;/li&gt;
+          &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;/ul&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>ol</td>
+        <td>順序付きリスト
+          Ordered List</td>
+        <td><pre>
+        &lt;ol&gt;
+          &lt;li&gt;HTML&lt;/li&gt;
+          &lt;li&gt;CSS&lt;/li&gt;
+          &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;/ol&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>dl</td>
+        <td>説明付きリスト
+          Description List
+          Description Details</td>
+        <td><pre>
+        &lt;dl&gt;
+          &lt;dt&gt;HTML&lt;/dt&gt;
+          文書の意味
+          &lt;dt&gt;CSS&lt;/dt&gt;
+          文書の見た目
+          &lt;dt&gt;JavaScript&lt;/dt&gt;
+          文書の動き
+        &lt;/dl&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>pre</td>
+        <td>HTMLタグをそのまま表示するためのタグ</td>
+        <td><pre>
+        &lt;pre&gt;
+          &amp;lt;p&amp;gt;HTMLタグをそのまま表示しようと試みる&amp;lt;/p&amp;gt;
+          &amp;lt;p&amp;gt;pタグでマークアップしたテキスト&amp;lt;/p&amp;gt;
+        &lt;/pre&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>table</td>
+        <td>全体をかこう</td>
+        <td><pre>
+        &lt;table&gt;
+          &lt;thead&gt;
+           &lt;tr&gt;&lt;th&gt;。。。&lt;/th&gt;&lt;th&gt;。。。&lt;/th&gt;&lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+           &lt;tr&gt;&lt;td&gt;。。。&lt;/td&gt;&lt;td&gt;。。。&lt;/td&gt;&lt;/tr&gt;
+           &lt;tr&gt;&lt;td&gt;。。。&lt;/td&gt;&lt;td&gt;。。。&lt;/td&gt;&lt;/tr&gt;
+           &lt;/tbody&gt;
+         &lt;/table&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>thead</td>
+        <td>見出し部分
+          テーブルヘッド</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tbody</td>
+        <td>本体
+          テーブルボディ</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tr</td>
+        <td>行
+          table row</td>
+        <td></td>
+      </tr>      <tr>
+        <td>th</td>
+        <td>テーブルヘッダー</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>td</td>
+        <td>テーブルデータセル</td>
+        <td></td>
+      </tr>      
+      <tr>
+        <td>a</td>
+        <td>アンカータグ</td>
+        <td>&lt;a href=&quot;https://256times.com&quot; target=&quot;_blank&quot;&gt;256times&lt;/a&gt;</td>
+      </tr>
+      <tr>
+        <td>aパート２</td>
+        <td>ページ内にとぶ場合はidを使用。id側には#をつけないことに注意。</td>
+        <td><pre>
+        &lt;a href=&quot;#lessons&quot;&gt;とびます&lt;/a&gt;
+        &lt;section id=&quot;lessons&quot;&gt;。。。&lt;/section&gt;</pre></td>
+      </tr>      
+      <tr>
+        <td>nav</td>
+        <td>ナビゲーションタグ
+          sectionと同様、文書の区切りをわかりやすくするだけでブラウザで表示は変わらない。</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>header</td>
+        <td>ヘッダータグ</td>
+        <td>&lt;header&gt;。。。&lt;/header&gt;</td>
+      </tr>      
+      <tr>
+        <td>small</td>
+        <td>著作権情報など注釈的に小さく表示したい情報を表現するために使用</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>ブラウザのタブやブックマークしたときのタイトル、検索結果で表示されるときに使われる</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ファビコン</td>
+        <td>ブラウザのタブやブックマークでタイトルの横に表示されるアイコンのこと</td>
+        <td><pre>
+        &lt;head&gt;
+          &lt;link rel=&quot;icon&quot; href=&quot;favicon.png&quot;&gt;
+        &lt;/head&gt;</pre></td>
+      </tr>      
+      <tr>
+        <td>main</td>
+        <td>使わなくてもよい</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>aside</td>
+        <td>広告などの段落をわかりやすくする意味で使用。</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>article</td>
+        <td>記事のようなコンテンツ
+          sectionと同じく文書の区切りを明確にするだけ。見た目は変わらない。</td>
+        <td></td>
+      </tr>      
+      <tr>
+        <td>br</td>
+        <td>改行。閉じタグがない。</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&amp;lt;</td>
+        <td><</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&amp;gt;</td>
+        <td>></td>
+        <td></td>
+      </tr>      
+      <tr>
+        <td>code</td>
+        <td>文中でコンピュータプログラムのコードを表現する際はcodeタグを使うと意味が明確になる。</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>span</td>
+        <td>文中の一部にスタイルを付けたいときに使う。1文字だけ赤くしたいなど。</td>
+        <td>&lt;h3&gt;&lt;span style=&quot;color:red;&quot;&gt;新&lt;/span&gt;機能ができました！&lt;/h3&gt;</td>
+      </tr>
+      <tr>
+        <td>div</td>
+        <td>文中の一部ではなくて一つ以上の要素をまとめたブロックをスタイリングしたい場合に使う</td>
+        <td>&lt;div style=&quot;margin-left:40px;&quot;&gt; 。。。&lt;/div&gt;</td>
+      </tr>      
+    </tbody>
+  </table>
+  <footer>
+    <a href="https://taketaku49.github.io/">TOP</a>
+  </footer>
+</body>
+
+</html>
