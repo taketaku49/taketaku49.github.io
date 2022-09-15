@@ -12,3 +12,20 @@ body{
   border-radius: 50%;
   vertical-align: middle;
 }
+
+.flex{
+  display:flex;
+  border: 1px solid #333;
+}
+
+.flex div{
+  border: 1px solid #333;
+}
+.right{
+  width: 50%;
+  background: #ffd87c;
+}
+.left{
+  width: 50%;
+  background: #9ddbfc;
+}
